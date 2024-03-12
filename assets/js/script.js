@@ -28,14 +28,15 @@ function checkForMatch() {
 
   isMatch ? disableCards() : unflipCards();
 }
-
+//It's a match!
 function disableCards() {
   firstCard.removeEventListener('click', flipCard)
   secondCard.removeEventListener('click', flipCard)
 
+  incrementScore();
   resetBoard();
 }
-
+//It's not a match!
 function unflipCards() {
   lockBoard = true;
 
@@ -45,6 +46,11 @@ function unflipCards() {
 
     resetBoard();
   }, 1000);
+}
+
+function incrementScore() {
+  let oldScore = parseInt(document.getElementById('score').innerText);
+  document.getElementById('score').innerText = ++oldScore;
 }
 
 function resetBoard() {
