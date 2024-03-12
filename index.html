@@ -8,6 +8,13 @@
     <title>A Flipping Good Memory Game</title>
 </head>
 <body>
+    <header class="header">
+        <h1 class="header__title">A Flipping Good Memory Game</h1>
+    </header>
+    <section class="round-reset">
+        <label class="round-reset__label" for="">Round:</label>
+        <button class="btn" id="round-reset__reset-btn">Reset</button>
+    </section>
     <section class="game-container">
         <div class="memory-card" data-framework="ace-spades">
             <img class="front-face" src="assets/images/ace-spades.png" alt="Ace of Spades">
@@ -56,6 +63,16 @@
         <div class="memory-card" data-framework="king-clubs">
             <img class="front-face" src="assets/images/king-clubs.png" alt="King of Clubs">
             <img class="back-face" src="assets/images/back-of-card.png" alt="Back of card">
+        </div>
+    </section>
+    <section class="player-info">
+        <div class="player-info__description">
+            <label for="player-name">Name:</label>
+            <p name="player-name"></p>
+            <label for="player-score">Score:</label>
+            <p name="player-score"></p>
+            <label for="player-lives">Lives:</label>
+            <p name="player-lives"></p>
         </div>
     </section>
     <!-- JS Script -->

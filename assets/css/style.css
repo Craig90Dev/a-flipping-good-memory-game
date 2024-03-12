@@ -14,48 +14,113 @@
 /* Main styles*/
 body {
     height: 100vh;
-    display: flex;
     background-color: blue;
 }
 
- .game-container {
-    width: 640px;
-    height: 640px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    perspective: 1000px;
- }
+/* Header */
+.header {
+   width: 80%;
+   text-align: center;
+   background-color: grey;
+   border: 2px solid darkgrey;
+   border-radius: 30px;
+   margin: 10px auto;
+   padding: 1rem 0;
+}
 
- .memory-card {
-    height: calc(33.333% - 10px);
-    width: calc(25% - 10px);
-    position: relative;
-    margin: 5px;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .7s;
- }
+.header__title {
+   font-size: 1.5rem;
+   text-transform: capitalize;
+}
+
+/* Round-Reset Section */
+.round-reset {
+   display: flex;
+   width: 80%;
+   margin: 0 auto;
+   justify-content: space-between;
+}
+
+.round-reset__label {
+   margin-top: 1rem;
+   margin-left: 6rem;
+   background-color: grey;
+   border: 2px solid darkgrey;
+   border-radius: 10px;
+   padding: 5px;
+   width: 100px;
+   text-align: center;
+}
+
+#round-reset__reset-btn {
+   margin-top: 1rem;
+   margin-right: 6rem;
+}
+
+/* Game Board */
+.game-container {
+   width: 640px;
+   height: 640px;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   perspective: 1000px;
+}
+
+.memory-card {
+   height: calc(33.333% - 10px);
+   width: calc(25% - 10px);
+   position: relative;
+   margin: 5px;
+   transform: scale(1);
+   transform-style: preserve-3d;
+   transition: transform .7s;
+}
+
 /* Card click animation*/
- .memory-card:active {
-    transform: scale(.97);
-    transition: transform .2s;
- }
+.memory-card:active {
+   transform: scale(.97);
+   transition: transform .2s;
+}
+
 /*Card flip animation*/
- .memory-card.flip {
-    transform: rotateY(180deg);
- }
+.memory-card.flip {
+   transform: rotateY(180deg);
+}
 
- .front-face,
- .back-face {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    position: absolute;
-    backface-visibility: hidden;
- }
+.front-face,
+.back-face {
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   position: absolute;
+   backface-visibility: hidden;
+}
 
- .front-face {
-    transform: rotateY(180deg);
- }
-/* Utility styles */
+.front-face {
+   transform: rotateY(180deg);
+}
+
+/* Player-info Section */
+.player-info__description {
+   display: flex;
+   justify-content: space-evenly;
+   width: 80%;
+   text-align: center;
+   background-color: grey;
+   border: 2px solid darkgrey;
+   border-radius: 30px;
+   margin: 20px auto;
+   padding: 1rem 0;
+}
+
+/* Utility Class */
+.btn {
+   background-color: grey;
+   border: 2px solid darkgrey;
+   border-radius: 10px;
+   width: 100px;
+   padding: 5px;
+   font-size: 1rem;
+   font-weight: 600;
+}
