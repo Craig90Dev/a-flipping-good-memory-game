@@ -12,8 +12,8 @@
         <h1 class="header__title">A Flipping Good Memory Game</h1>
     </header>
     <section class="round-reset">
-        <label class="round-reset__label" for="">Round:</label>
-        <button class="btn" id="round-reset__reset-btn">Reset</button>
+        <h2 class="round-reset__label">Score: <span id="score">0</span></h2>
+        <button class="btn" id="round-reset__reset-btn" onclick="restartGame();">Reset</button>
     </section>
     <section class="game-container">
         <div class="memory-card" data-framework="ace-spades">

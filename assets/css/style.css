@@ -29,7 +29,7 @@ body {
 }
 
 .header__title {
-   font-size: 1.5rem;
+   font-size: 2.5rem;
    text-transform: capitalize;
 }
 
@@ -44,17 +44,20 @@ body {
 .round-reset__label {
    margin-top: 1rem;
    margin-left: 6rem;
+   font-size: 1.5rem;
    background-color: grey;
    border: 2px solid darkgrey;
    border-radius: 10px;
    padding: 5px;
-   width: 100px;
+   width: 120px;
    text-align: center;
+   padding: 5px;
 }
 
 #round-reset__reset-btn {
    margin-top: 1rem;
    margin-right: 6rem;
+   width: 120px;
 }
 
 /* Game Board */
@@ -106,6 +109,7 @@ body {
    display: flex;
    justify-content: space-evenly;
    width: 80%;
+   font-size: 1.5rem;
    text-align: center;
    background-color: grey;
    border: 2px solid darkgrey;
@@ -123,4 +127,6 @@ body {
    padding: 5px;
    font-size: 1rem;
    font-weight: 600;
+   cursor: pointer;
 }
+
