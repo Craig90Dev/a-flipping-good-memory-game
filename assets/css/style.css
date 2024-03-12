@@ -13,6 +13,7 @@
 
 /* Main styles*/
 body {
+    height: 100vh;
     background-color: blue;
 }
 
