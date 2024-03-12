@@ -44,6 +44,7 @@ function unflipCards() {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
 
+    loseLife();
     resetBoard();
   }, 1000);
 }
@@ -51,6 +52,13 @@ function unflipCards() {
 function incrementScore() {
   let oldScore = parseInt(document.getElementById('score').innerText);
   document.getElementById('score').innerText = ++oldScore;
+  return;
+}
+
+function loseLife() {
+  let oldLives = parseInt(document.getElementById('lives').innerText);
+  document.getElementById('lives').innerText = --oldLives;
+  return;
 }
 
 function resetBoard() {
