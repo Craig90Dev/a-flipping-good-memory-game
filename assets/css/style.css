@@ -14,7 +14,30 @@
 /* Main styles*/
 body {
     height: 100vh;
+    display: flex;
     background-color: blue;
 }
 
+ .game-container {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .memory-card {
+    height: calc(33.333% - 10px);
+    width: calc(25% - 10px);
+    position: relative;
+    margin: 5px;
+ }
+
+ .front-face,
+ .back-face {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+ }
 /* Utility styles */
